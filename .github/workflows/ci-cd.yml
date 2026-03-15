@@ -49,7 +49,7 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t myuser/fastapi-demo:latest .
+          docker build -t fian0209/fastapi-demo:latest .
 
       - name: Push Docker image
-        run: docker push myuser/fastapi-demo:latest
+        run: docker push fian0209/fastapi-demo:latest
