@@ -24,7 +24,6 @@ def modelisation(files):
     X = file[["heures_etude", "heures_sommeil", "presence_cours"]]
     Y = file[["score"]]
 
- 
     model = LinearRegression()
 
     # Validation croisée 5-fold
@@ -39,3 +38,4 @@ def modelisation(files):
         "Scores par fold": scores.tolist(),
         "Score moyen": scores.mean()
     }
+
