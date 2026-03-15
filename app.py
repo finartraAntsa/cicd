@@ -16,3 +16,4 @@ def modeliser(files):
     if resultat is None:
         return {"erreur": "Aucun fichier trouvé ou fichier invalide."}
     return resultat
+
