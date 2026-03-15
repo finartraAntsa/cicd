@@ -12,4 +12,4 @@ def test_api():
 
     # validation test number 2
     reponse2 = client.get("/modelisation?files=file.csv")
-    assert reponse2.status_code == 200  
+    assert reponse2.status_code == 200

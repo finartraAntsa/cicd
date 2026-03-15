@@ -38,3 +38,4 @@ def modelisation(files):
         "Scores par fold": scores.tolist(),
         "Score moyen": scores.mean()
     }
+    
