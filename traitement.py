@@ -25,7 +25,7 @@ def modelisation (files):
     #***************Ici nous n'allons utiliser que la regression lineaire multiple **************
     model= sklearn.linear_model.LinearRegression()
 
-    # Validation croisée 5-fold, boucle cachée à l'intérieur
+    # Validation croisée 5-fold
     scores = sklearn.model_selection.cross_val_score(model, X, Y, cv=5)
     
     #Entrainement final apre selection du model 
@@ -37,7 +37,7 @@ def modelisation (files):
             "Score moyen ": scores.mean()
             }
    
-
+print("salut")
     
 
 
