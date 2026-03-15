@@ -12,6 +12,7 @@ import pandas as pd
 from sklearn.linear_model import LinearRegression
 from sklearn.model_selection import cross_val_score
 
+
 def modelisation(files):
     try:
         file = pd.read_csv(files)
@@ -23,7 +24,7 @@ def modelisation(files):
     X = file[["heures_etude", "heures_sommeil", "presence_cours"]]
     Y = file[["score"]]
 
-    # *************** Ici nous n'allons utiliser que la régression linéaire multiple ***************
+ 
     model = LinearRegression()
 
     # Validation croisée 5-fold
