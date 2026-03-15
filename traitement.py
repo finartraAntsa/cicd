@@ -34,7 +34,4 @@ def modelisation(files):
     model.fit(X, Y)
 
     # Valeur de retour sous forme de JSON
-    return {
-        "Scores par fold": scores.tolist(),
-        "Score moyen": scores.mean()
-    }
+    return {"Scores par fold": scores.tolist(), "Score moyen": scores.mean()}
