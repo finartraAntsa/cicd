@@ -4,11 +4,13 @@ from traitement import modelisation
 
 app = FastAPI()
 
+
 @app.get("/")
 def direBonjour():
-    return {"mot":"bonjour tous le monde"}
+    return {"mot": "bonjour tous le monde"}
+
 
 @app.get("/modelisation")
 def modeliser(files):
-    resultat =  modelisation(files)
-    return resultat 
+    resultat = modelisation(files)
+    return resultat
