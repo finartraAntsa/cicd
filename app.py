@@ -7,7 +7,7 @@ app = FastAPI()
 @app.get("/")
 def dire_bonjour():
     """Endpoint racine qui renvoie un message de bienvenue."""
-    return {"mot": "bonjour tous le monde"}
+    return {"mot": "bon"}
 
 
 @app.get("/modelisation")
